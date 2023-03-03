@@ -30,3 +30,5 @@ console.log(arr.some(someFn)); // some return boolean value
 //includes (try it but we will discuss it later)
 
 //reduce (try it but we will discuss it later)
+
+//join (we will discuss it in string topic)
