@@ -1,0 +1,20 @@
+{
+  "name": "js-practice",
+  "version": "1.0.0",
+  "description": "js practice",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nihaldev07/js-practice.git"
+  },
+  "author": "Nihal & chisty",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nihaldev07/js-practice/issues"
+  },
+  "homepage": "https://github.com/nihaldev07/js-practice#readme"
+}
