@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Search</title>
+  </head>
+  <script src="index.js"></script>
+  <body>
+    <input
+      type="text"
+      id="search"
+      placeholder="Search"
+      onchange="searchResult(event)"
+    />
+    <br />
+    <div id="search-result"></div>
+  </body>
+
+  <script>
+    const searchResult = (event) => {
+      const text = event.target.value;
+      const result = searchEngine(text); //it has to be an array
+
+      let str = "<ul>";
+      for (let i = 0; i < result.length; i++) {
+        str += `<li>${result[i]}</li>`;
+      }
+      str += "</ul>";
+
+      const divElement = document.getElementById("search-result");
+      divElement.innerHTML = str;
+    };
+  </script>
+</html>
