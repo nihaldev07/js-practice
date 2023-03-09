@@ -24,11 +24,18 @@ const newStr = "The way to get started is to quit talking and begin doing";
 //create a string where all the word of newstr will be in reverse order
 
 const str = newStr.split(" ");
-//console.log(str.reverse());
 
 // create a string where all the word of newstr will only have 3 char
 
-console.log(str.map(itm=> {if(itm.length>3) return itm.slice(2)}));
+// console.log(
+//   str.map((itm) => {
+//     if (itm.length > 3) return itm.slice(0, 3);
+//     else return itm;
+//   })
+// );
+
+//example of ternary(?) operator
+//console.log(str.map((itm) => (itm.length > 3 ? itm.slice(0, 3) : itm)));
 
 // remove all the word with length less then 4
- console.log(str.filter(itm=> itm.length>=4).join(" "));
+//console.log(str.filter((itm) => itm.length >= 4).join(" "));
