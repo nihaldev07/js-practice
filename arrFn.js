@@ -21,7 +21,7 @@ const finalString = filtered.join(" ");
 
 const newStr = "The way to get started is to quit talking and begin doing";
 
-//create a string where all the word of newstr will be in reverse order
+//create a string where all the character of newstr will be in reverse order
 
 const str = newStr.split(" ");
 
