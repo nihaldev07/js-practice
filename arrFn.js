@@ -12,17 +12,23 @@ const filtered = newArr.filter(
   (item) => !vowel.includes(item[0].toLowerCase())
 );
 const finalString = filtered.join(" ");
-console.log(
+/*console.log(
   fteam
     .split(" ")
     .filter((item) => !vowel.includes(item[0].toLowerCase()))
     .join(" ")
-);
+); */
 
 const newStr = "The way to get started is to quit talking and begin doing";
 
 //create a string where all the word of newstr will be in reverse order
 
-// create a string where all the word of newstr wil only have 3 char
+const str = newStr.split(" ");
+//console.log(str.reverse());
+
+// create a string where all the word of newstr will only have 3 char
+
+console.log(str.map(itm=> {if(itm.length>3) return itm.slice(2)}));
 
 // remove all the word with length less then 4
+ console.log(str.filter(itm=> itm.length>=4).join(" "));
