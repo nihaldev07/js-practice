@@ -46,7 +46,7 @@ console.log(arr.reduce(joinarr));
 let join = arr.join("+");
 console.log(join);
 
-//stack in array
+//stack in array 1
 let num = [];
 let digit = num.push(4, 2);
 console.log(digit);
