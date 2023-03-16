@@ -5,7 +5,7 @@ const arr = [
   "Bangladesh",
   "Japan",
   "Korea",
-  "INdonesia",
+  "Indonesia",
   "Nepal",
   "Bhutan",
   "China",
@@ -15,5 +15,12 @@ const arr = [
   "South Africa",
 ];
 const searchEngine = (keyword) => {
-  return arr;
-};
+ 
+  for(i=0; i<arr.length; i++){
+    if(arr[i]== keyword){
+    let result = arr[i];
+      return result ;
+  }
+}
+}
+
